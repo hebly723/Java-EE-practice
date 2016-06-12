@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" 
+   version="2.4"> 
+	<servlet>
+		<servlet-name>AJsp</servlet-name>
+		<jsp-file>/AJsp.jsp</jsp-file>
+	</servlet>
+	
+	<servlet>
+		<servlet-name>AServlet</servlet-name>
+		<servlet-class>com.web.AServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>selectProduct</servlet-name>
+		<servlet-class>call.product</servlet-class>
+	</servlet>
+  	<servlet>
+    	<servlet-name>select</servlet-name>
+    	<servlet-class>order.select</servlet-class>
+  	</servlet>
+  
+  	<servlet>
+    	<servlet-name>delete</servlet-name>
+    	<servlet-class>order.delete</servlet-class>
+  	</servlet>
+  <servlet>
+    <servlet-name>Product_select</servlet-name>
+    <servlet-class>servlet.Product_select</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Product_update</servlet-name>
+    <servlet-class>servlet.Product_update</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Product_add</servlet-name>
+    <servlet-class>servlet.Product_add</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Employee_select</servlet-name>
+    <servlet-class>servlet.Employee_select</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderMaster_select</servlet-name>
+    <servlet-class>servlet.OrderMaster_select</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderMaster_update</servlet-name>
+    <servlet-class>servlet.OrderMaster_update</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>OrderMaster_add</servlet-name>
+    <servlet-class>servlet.OrderMaster_add</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>Random_select</servlet-name>
+    <servlet-class>servlet.Random_select</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <filter>
+    <filter-name>EncodeFilter</filter-name>
+    <filter-class>filter.EncodeFilter</filter-class>
+  </filter>
+
+
+
+
+	<servlet-mapping>
+		<servlet-name>AJsp</servlet-name>
+		<url-pattern>/AJsp.jsp</url-pattern>
+	</servlet-mapping>
+
+	<servlet-mapping>
+		<servlet-name>selectProduct</servlet-name>
+		<url-pattern>/product/select</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AServlet</servlet-name>
+		<url-pattern>/servlet/com.web.AServlet</url-pattern>
+	</servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>select</servlet-name>
+    <url-pattern>/servlet/select</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>delete</servlet-name>
+    <url-pattern>/servlet/delete</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Product_select</servlet-name>
+    <url-pattern>/Product_select</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Product_update</servlet-name>
+    <url-pattern>/Product_update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Product_add</servlet-name>
+    <url-pattern>/Product_add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Employee_select</servlet-name>
+    <url-pattern>/Employee_select</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderMaster_select</servlet-name>
+    <url-pattern>/OrderMaster_select</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderMaster_update</servlet-name>
+    <url-pattern>/OrderMaster_update</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>OrderMaster_add</servlet-name>
+    <url-pattern>/OrderMaster_add</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Random_select</servlet-name>
+    <url-pattern>/Random_select</url-pattern>
+  </servlet-mapping>
+  <filter-mapping>
+    <filter-name>EncodeFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+	<welcome-file-list>
+		<welcome-file>/AJsp.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>

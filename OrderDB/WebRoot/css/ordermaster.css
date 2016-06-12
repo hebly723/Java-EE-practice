@@ -1,0 +1,57 @@
+.select_product_btn{
+}
+.product_result{
+	border-left: 10px;
+	width:100%;
+	background-color: #98FB98;
+}
+.sort_product{
+	text-decoration: none;
+	width: 20%;
+	color: #A1A1A1
+}
+.sort_customer{
+	text-decoration: none;
+	width: 20%;
+	color: #A1A1A1
+}
+.sort_employee{
+	text-decoration: none;
+	width: 20%;
+	color: #A1A1A1
+}
+.sort_orderdetail{
+	text-decoration: none;
+	width: 20%;
+	color: #A1A1A1
+}
+.sort_ordermaster{
+	text-decoration: none;
+	width: 20%;
+	color: #9ACD32
+}
+.sort_random{
+	text-decoration: none;
+	width: 20%;
+	color: #A1A1A1
+}
+.search_condition{
+	width:10%;
+	text-decoration: none;
+	border-color: white;
+	background-color: white;
+}
+.search_result{
+	type:"text";
+	width:10%;
+	border-color: white;
+	background-color: white;
+	background-color: #98FB98;
+}
+.info_add{
+	type:"text";
+	width:10%;
+	border-color: white;
+	background-color: white;
+	background-color: #C5C1AA;
+}
